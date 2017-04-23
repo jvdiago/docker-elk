@@ -2,7 +2,7 @@
 
 [![Join the chat at https://gitter.im/deviantony/docker-elk](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/deviantony/docker-elk?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
-Run the latest version of the ELK (Elasticsearch, Logstash, Kibana) stack with Docker and Docker-compose.
+Run the latest version of the ELK (Elasticsearch, Logstash, Kibana) stack with Docker and Docker-compose. Elasticsearch is configured as a two node ELK.
 
 It will give you the ability to analyze any data set by using the searching/aggregation capabilities of Elasticsearch and the visualization power of Kibana.
 
@@ -68,6 +68,7 @@ Refer to [Connect Kibana with Elasticsearch](https://www.elastic.co/guide/en/kib
 
 By default, the stack exposes the following ports:
 * 5000: Logstash TCP input.
+* 5044: Logstash beats input.
 * 9200: Elasticsearch HTTP
 * 9300: Elasticsearch TCP transport
 * 5601: Kibana
